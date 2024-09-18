@@ -1,8 +1,10 @@
 
 <br>
 
-### Create a Secret.
+### Namaste!
 
-Create a secret in the namespace `marriage`.
+Welcome to this Scenario! Are you ready?!
+
+
 
 

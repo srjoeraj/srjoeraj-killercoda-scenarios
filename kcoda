@@ -83,7 +83,10 @@ cat   > "$name"/intro.md <<EOF
 
 <br>
 
-### Let's learn some Kubernetes
+### Namaste!
+
+Welcome to this Scenario!
+Are you ready? Let's go!
 
 
 EOF
