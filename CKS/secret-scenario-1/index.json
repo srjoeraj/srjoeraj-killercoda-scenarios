@@ -1,19 +1,19 @@
 
 {
-  "title": "##--ADD-A-TITTLE--##",
-  "description": "##--ADD-A-DESC--##",
+  "title": "Mount a Secret in Pod as a Volume",
+  "description": "",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "title": "#--ENTER--STEP--1--#",
+        "title": "Create a secret",
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       },
       {
-        "title": "#--Enter--STEP--2--#",
+        "title": "Mount the secret in the existing pod.",
         "text": "step2/text.md",
         "verify": "step2/verify.sh"
       }
