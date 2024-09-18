@@ -1,0 +1,94 @@
+#!/bin/bash
+
+name=scenario-test
+
+
+mkdir -p "$name"/test/step1
+mkdir -p "$name"/test/step2
+touch "$name"/test/finish.md
+touch "$name"/test/index.json
+touch "$name"/test/intro.md
+
+touch "$name"/test/step1/text.md
+touch "$name"/test/step1/verify.sh
+
+touch "$name"/test/step2/text.md
+touch "$name"/test/step2/verify.sh
+
+
+cat > "$name"/test/step1/verify.sh <<EOF
+
+#!/bin/bash
+#
+#
+# Enter some stuff!
+
+EOF
+
+
+cat > "$name"/test/step2/verify.sh <<EOF
+
+#!/bin/bash
+#
+#
+# Enter some stuff!
+
+EOF
+
+cat > "$name"/test/index.json <<EOF
+
+{
+  "title": "##--ADD-A-TITTLE--##",
+  "description": "##--ADD-A-DESC--##",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "#--ENTER--STEP--1--#",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "#--Enter--STEP--2--#",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
+
+EOF
+
+
+cat   > "$name"/test/finish.md <<EOF
+<br>
+
+### WELL DONE !
+
+You solved this challenge!
+
+EOF
+
+
+
+cat   > "$name"/test/intro.md <<EOF
+
+<br>
+
+### Let's learn some Kubernetes
+
+
+EOF
+
+
+
+
+
