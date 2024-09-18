@@ -3,30 +3,20 @@
 name=scenario-test
 
 
-mkdir -p "$name"/test/step1
-mkdir -p "$name"/test/step2
-touch "$name"/test/finish.md
-touch "$name"/test/index.json
-touch "$name"/test/intro.md
+mkdir -p "$name"/step1
+mkdir -p "$name"/step2
+touch "$name"/finish.md
+touch "$name"/index.json
+touch "$name"/intro.md
 
-touch "$name"/test/step1/text.md
-touch "$name"/test/step1/verify.sh
+touch "$name"/step1/text.md
+touch "$name"/step1/verify.sh
 
-touch "$name"/test/step2/text.md
-touch "$name"/test/step2/verify.sh
-
-
-cat > "$name"/test/step1/verify.sh <<EOF
-
-#!/bin/bash
-#
-#
-# Enter some stuff!
-
-EOF
+touch "$name"/step2/text.md
+touch "$name"/step2/verify.sh
 
 
-cat > "$name"/test/step2/verify.sh <<EOF
+cat > "$name"/step1/verify.sh <<EOF
 
 #!/bin/bash
 #
@@ -35,7 +25,17 @@ cat > "$name"/test/step2/verify.sh <<EOF
 
 EOF
 
-cat > "$name"/test/index.json <<EOF
+
+cat > "$name"/step2/verify.sh <<EOF
+
+#!/bin/bash
+#
+#
+# Enter some stuff!
+
+EOF
+
+cat > "$name"/index.json <<EOF
 
 {
   "title": "##--ADD-A-TITTLE--##",
@@ -68,7 +68,7 @@ cat > "$name"/test/index.json <<EOF
 EOF
 
 
-cat   > "$name"/test/finish.md <<EOF
+cat   > "$name"/finish.md <<EOF
 <br>
 
 ### WELL DONE !
@@ -79,7 +79,7 @@ EOF
 
 
 
-cat   > "$name"/test/intro.md <<EOF
+cat   > "$name"/intro.md <<EOF
 
 <br>
 
