@@ -9,6 +9,8 @@ touch "$name"/finish.md
 touch "$name"/index.json
 touch "$name"/intro.md
 
+touch "$name"/background.sh
+
 touch "$name"/step1/text.md
 touch "$name"/step1/verify.sh
 
@@ -43,6 +45,7 @@ cat > "$name"/index.json <<EOF
   "details": {
     "intro": {
       "text": "intro.md"
+      "background": "background.sh"
     },
     "steps": [
       {
