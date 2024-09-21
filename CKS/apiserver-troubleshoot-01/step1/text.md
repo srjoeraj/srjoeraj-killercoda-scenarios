@@ -9,18 +9,26 @@ Help **Kazama** ensure the API server is brought back online. In simple terms, t
 <br>
 <details><summary>Tip #1</summary>
 <br>
+
 Check the relevant logs related to the API server.
 
 <br>
 </details>
 <details><summary>Tip #2</summary>
 <br>
-There’s nothing in the `/var/log/pods/` or `/var/log/containers/` directories.<br> Let's check the system logs for the API server using `journalctl | grep "apiserver"`.<br>
-</details>
+
+There’s nothing in the `/var/log/pods/` or `/var/log/containers/` directories.
+
+<br> 
+
+Let's check the system logs for the API server using `journalctl | grep "apiserver"`.
+
 <br>
+
+</details>
 <details><summary>Tip #3</summary>
 <br>
-This entry regarding a `hostPath` type check seems promising. 
+This entry regarding a `hostPath` type check seems promising. <br>
 
 ```bash
 Sep 21 13:37:53 controlplane kubelet[1666]: E0921 13:37:53.417751    1666 event.go:368] "Unable to write event (may retry after sleeping)"
