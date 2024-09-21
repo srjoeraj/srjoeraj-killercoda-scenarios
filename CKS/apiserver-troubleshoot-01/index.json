@@ -1,7 +1,7 @@
 
 {
   "title": "KUBE-APISERVER-Troubleshooting-01",
-  "description": "The kube-apiserver is down! Fix it!",
+  "description": "Something went wrong while configuring auditing! Fix it!",
   "details": {
     "intro": {
       "text": "intro.md",
@@ -14,14 +14,18 @@
         "verify": "step1/verify.sh"
       }
     ],
-    "finish": {
-      "text": "finish.md"
-    }
-  },
+
   "assets": {
       "controlplane": [
         {"file": "tset.yaml", "target": "/root", "chmod": "+x"}
       ]
+    }
+  },
+
+
+
+    "finish": {
+      "text": "finish.md"
     }
   },
   "backend": {
