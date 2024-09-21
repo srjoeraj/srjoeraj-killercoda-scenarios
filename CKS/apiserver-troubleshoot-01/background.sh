@@ -1,3 +1,5 @@
-kubectl create ns hello
+#!/bin/bash
+#
 
-kubectl create deploy testing --image=nginx --replicas=3 -n hello
+mkdir -p /etc/kubernetes/auditing/rules
+mkdir -p /etc/kubernetes/auditing/logs
