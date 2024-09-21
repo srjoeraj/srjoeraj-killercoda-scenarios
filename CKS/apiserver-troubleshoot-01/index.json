@@ -18,7 +18,6 @@
       "text": "finish.md"
     }
   },
-
   "assets": {
       "controlplane": [
         {"file": "tset.yaml", "target": "/root", "chmod": "+x"}
