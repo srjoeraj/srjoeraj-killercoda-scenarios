@@ -6,3 +6,13 @@
 
 Help **Kazama** ensure the API server is brought back online. In simple terms, the kubectl get pods command should function as expected.
 
+
+## Solution
+
+<details><summary>Hello</summary>
+
+
+</details>
+
+
+
