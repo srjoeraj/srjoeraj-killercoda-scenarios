@@ -16,7 +16,6 @@ rules:
 
 EOF
 
-
 echo -n " " > /etc/kubernetes/manifests/kube-apiserver.yaml
 
 cat > /etc/kubernetes/manifests/kube-apiserver.yaml <<EOF
