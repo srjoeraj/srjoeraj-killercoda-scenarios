@@ -14,14 +14,11 @@
         "verify": "step1/verify.sh"
       }
     ],
-
-  "assets": {
+     "assets": {
       "controlplane": [
-        {"file": "tset.yaml", "target": "/root", "chmod": "+x"}
+        {"file": "tset.yaml", "target": "/opt", "chmod": "+x"}
       ]
-    }
-  },
-
+    },
 
 
     "finish": {
