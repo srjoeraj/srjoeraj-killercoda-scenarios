@@ -1,10 +1,8 @@
 ## Context
 
-Shinouske was trying to implement a security feature in the kubernetes cluster to make logging events easier. Sadly he was in a hurry, and had a date to attend so he could not check the changes he had made. After Shinouske left, his friend and colleauge Kazama saw that the kube-apiserver was down and thus the cluster was no longer accessible.
-
+**Shinouske** was implementing a security feature in the Kubernetes cluster to streamline logging events. Unfortunately, he was in a rush due to a prior commitment and didn't have time to review the changes he made. After Shinouske left, his friend and colleague **Kazama** noticed that the kube-apiserver was down, rendering the cluster inaccessible.
 
 ## Task
 
-Help Kazama, to ensure that the API-server is back online. In simple terms `kubectl get pods` should work as expected.
-
+Help **Kazama** ensure the API server is brought back online. In simple terms, the kubectl get pods command should function as expected.
 
