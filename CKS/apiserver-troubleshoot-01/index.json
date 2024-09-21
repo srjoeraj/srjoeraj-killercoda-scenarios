@@ -16,7 +16,7 @@
     ],
      "assets": {
       "controlplane": [
-        {"file": "tset.yaml", "target": "/opt", "chmod": "+x"}
+        {"file": "tset1.yaml", "target": "/opt", "chmod": "+x"}
       ]
     },
 
