@@ -1,0 +1,25 @@
+
+{
+  "title": "Kube-apiserver Troubleshooting",
+  "description": "The kube-apiserver is down! Fix it!",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Restablish connection with the Kube-apiserver",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
+
