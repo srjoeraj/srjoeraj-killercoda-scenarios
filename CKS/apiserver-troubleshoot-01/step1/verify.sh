@@ -2,5 +2,14 @@
 #!/bin/bash
 #
 #
-# Enter some stuff!
+
+if kubectl get pods; then
+	echo "fine"
+
+else
+	exit 1
+
+
+
+
 
