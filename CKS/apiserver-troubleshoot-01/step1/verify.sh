@@ -1,18 +1,8 @@
-
 #!/bin/bash
-#
-#
 
 if kubectl get pods; then
-	echo "fine"
-
+    echo "success"
 else
-	exit 1
-
-
-echo "Validation successful."
-
-
-
-
-
+    echo "Failed"
+    exit 1
+fi
