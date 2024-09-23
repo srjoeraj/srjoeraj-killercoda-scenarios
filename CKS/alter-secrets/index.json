@@ -1,0 +1,32 @@
+
+{
+  "title": "Altering Secrets!",
+  "description": "Secrets store decoded values. Let's edit them!",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Edit secrets value as per criteria",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+     "assets": {
+      "controlplane": [
+        {"file": "tset1.yaml", "target": "/opt", "chmod": "+x"}
+      ]
+    },
+
+
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
+
