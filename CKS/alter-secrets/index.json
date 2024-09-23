@@ -13,6 +13,11 @@
         "text": "step1/text.md",
         "verify": "step1/verify.sh"
       }
+      {
+        "title": "Edit secrets value as per criteria",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
     ],
      "assets": {
       "controlplane": [
