@@ -89,4 +89,27 @@ metadata:
   name: moderator-user-6
   namespace: moderators
 
+---
+
+apiVersion: v1
+kind: Pod
+metadata:
+  creationTimestamp: null
+  labels:
+    run: mod-machine
+  name: mod-machine
+  namespace: moderators
+spec:
+  volumes:
+  - name: sec-vol
+    secret:
+     secretName: moderator-user-2
+  containers:
+  - image: nginx:alpine
+    name: mod-machine
+    resources: {}
+    volumeMounts: 
+    - name: sec-vol
+      mountPath: /opt/sec
+
 EOF
