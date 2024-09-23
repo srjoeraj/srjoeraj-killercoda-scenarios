@@ -7,7 +7,7 @@ apiVersion: v1
 kind: Namespace
 metadata:
   creationTimestamp: null
-  name: treasure-box
+  name: moderators
 spec: {}
 status: {}
 
@@ -20,8 +20,8 @@ data:
 kind: Secret
 metadata:
   creationTimestamp: null
-  name: user2
-  namespace: treasure-box
+  name: moderator-user-2
+  namespace: moderators
 
 ---
 
@@ -32,8 +32,8 @@ data:
 kind: Secret
 metadata:
   creationTimestamp: null
-  name: user1
-  namespace: treasure-box
+  name: moderator-user-1
+  namespace: moderators
 
 
 ---
@@ -46,8 +46,8 @@ data:
 kind: Secret
 metadata:
   creationTimestamp: null
-  name: user3
-  namespace: treasure-box
+  name: moderator-user-3
+  namespace: moderators
 
 ---
 
@@ -59,8 +59,8 @@ data:
 kind: Secret
 metadata:
   creationTimestamp: null
-  name: user4
-  namespace: treasure-box
+  name: moderator-user-4
+  namespace: moderators
 
 ---
 
@@ -72,8 +72,8 @@ data:
 kind: Secret
 metadata:
   creationTimestamp: null
-  name: user5
-  namespace: treasure-box
+  name: moderator-user-5
+  namespace: moderators
 
 ---
 
@@ -86,7 +86,7 @@ data:
 kind: Secret
 metadata:
   creationTimestamp: null
-  name: user5
-  namespace: treasure-box
+  name: moderator-user-6
+  namespace: moderators
 
 EOF
