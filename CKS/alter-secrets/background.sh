@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 
-
+kubectl apply -f <<EOF
 
 apiVersion: v1
 kind: Namespace
@@ -88,3 +88,5 @@ metadata:
   creationTimestamp: null
   name: user5
   namespace: treasure-box
+
+EOF
