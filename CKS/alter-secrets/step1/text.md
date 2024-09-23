@@ -3,9 +3,9 @@
 The `moderators` namespace contains secrets with information about usernames and passwords. Some of these secrets are used by resources within the same namespace.
 ## Task
 
-One of the users still has their password field set to the default CHANGE123. Update it to MANGO123.
-
 > Note: Data stored in secrets is base64 encoded!
+
+One of the users still has their password field set to the default `CHANGE123`. Update it to `MANGO123`.
 
 
 <br>
