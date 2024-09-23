@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if kubectl get pods; then
+if [[kubectl -n moderators get secrets moderator-user-5 -o jsonpath={.data.password} -eq "TUFOR08xMjM="]] then
     echo "success"
 else
     echo "Failed"
