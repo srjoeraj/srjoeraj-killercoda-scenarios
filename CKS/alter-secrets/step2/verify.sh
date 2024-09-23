@@ -1,9 +1,10 @@
 #/bin/bash
 #
 
-out=$(kubectl -n moderators get secrets moderator-user-5 -o jsonpath={.data.password})
+out=$(kubectl exec -n moderators mod-machine  -- cat  /opt/sec/username)
 
-if [[ "$out" == "TUFOR08xMjM=" ]]; then
+
+if [[ "$out" == "orochimaru" ]]; then
     echo "success"
 else
     echo "Failed"
