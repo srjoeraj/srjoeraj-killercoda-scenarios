@@ -7,12 +7,15 @@
 
 Find all the images used in the `first-lab` namespace. Use Trivy to scan each image. Ensure that all pods with `CRITICAL` or `HIGH` vulnerabilities are removed, but **do not delete any deployments.**
 
+
+> Note: Trivy is already installed on the controlplane.
+
+
 <br>
 <details><summary>Tip</summary>
 <br>
 
 An easy way to check the images used by the pod is, by filtering output using jsonpath. Here is an example:
-<br>
 <br>
 ```bash
 (ins)❯ k get pod pod-nginx -o jsonpath={.spec.containers[*].image}
