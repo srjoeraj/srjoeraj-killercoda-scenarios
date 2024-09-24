@@ -1,14 +1,12 @@
 ## Context
 
-The `moderators` namespace contains secrets with information about usernames and passwords. Some of these secrets are used by resources within the same namespace.
+In simple terms, the principle of least privilege means assigning the minimum permissions necessary for users or service accounts to complete a specific task. The `chemistry` namespace contains several service accounts named after great chemists in history. Your task is to implement the principle of least privilege in the following tasks involving RBAC.
 
 ## Task
 
-> Note: Data stored in secrets is base64 encoded!
+Identify the service accounts that aren’t bound to any role and delete them.
 
 
-One of the secrets is mounted as a volume in the `mod-machine`. Your task is to find the secret and update the username value to `orochimaru`.
-Verify that the value has been updated by executing into the pod.
 
 
 
