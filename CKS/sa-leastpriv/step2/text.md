@@ -4,7 +4,11 @@ In simple terms, the principle of least privilege means assigning the minimum pe
 
 ## Task
 
+
 Identify the service accounts that aren’t bound to any role and delete them.
+<br>
+If you delete any service accounts that shouldn't have been deleted, recreate them.
+
 
 
 
