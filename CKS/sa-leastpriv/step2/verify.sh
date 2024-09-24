@@ -13,3 +13,31 @@ fi
 
 
 
+if [[  "$salist" == *"curie"* ]]; then
+    echo "success"
+else
+    echo "fail"
+    exit 1
+fi
+
+
+
+if [[  "$salist" == *"mendeleev"* ]]; then
+    echo "success"
+else
+    echo "fail"
+    exit 1
+fi
+
+
+
+if [[  "$salist" == *"faraday"* ]]; then
+    echo "success"
+else
+    echo "fail"
+    exit 1
+fi
+
+
+
+
