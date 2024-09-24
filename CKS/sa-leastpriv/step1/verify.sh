@@ -6,7 +6,7 @@ role=$(kubectl -n chemistry get rolebinding guest-rolebinding -o jsonpath={.role
 resource=$(kubectl -n chemistry get role "$role" -o jsonpath={.rules[*].resources[*]})
 
 
-permission=$(kubectl -n chemistry get role "$role" -o jsonpath={.rules[*].verb[*]})
+permission=$(kubectl -n chemistry get role "$role" -o jsonpath={.rules[*].verbs[*]})
 
 
 
