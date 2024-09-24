@@ -1,0 +1,25 @@
+
+{
+  "title": "Container Image Analysis using Trivy!",
+  "description": "Using Trivy to detect vulnerabilites in container images.",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "#--ENTER--STEP--1--#",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node-4GB"
+  }
+}
+

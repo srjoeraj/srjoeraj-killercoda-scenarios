@@ -1,6 +1,6 @@
 #!/bin/bash
 
-name=scenario-test
+name=trivy-image-scan
 
 
 mkdir -p "$name"/step1
