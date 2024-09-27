@@ -1,0 +1,38 @@
+
+{
+  "title": "Least RBAC Privileges (Service Accounts)",
+  "description": "Ensure serviceaccounts, follow principle of Least Privilege!",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Restrict ServiceAccount",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+
+      {
+        "title": "Remove SeriveAccounts",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+     "assets": {
+      "controlplane": [
+        {"file": "tset1.yaml", "target": "/opt", "chmod": "+x"}
+      ]
+    },
+
+
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
+

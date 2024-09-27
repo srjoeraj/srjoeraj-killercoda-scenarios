@@ -1,0 +1,30 @@
+
+{
+  "title": "Troubleshooting SERVICE-ACCOUNTS!",
+  "description": "Identify and Fix misconfiguraitons in ServiceAcconts",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "Examine SA #1",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Examine SA #2",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node"
+  }
+}
+
