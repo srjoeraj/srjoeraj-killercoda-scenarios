@@ -18,7 +18,7 @@ kubectl -n compnay create role financial --verb=get,watch,list,delete --resource
 
 
 kubectl -n company create rolebinding technical-binding  --serviceaccount=company:engineer --role=technical
-kubectl -n company create rolebinding financial-binding  --serviceaccount=company:engineer --role=technical
+kubectl -n company create rolebinding financial-binding  --serviceaccount=company:engineer --role=financial
 
 
 kubectl create deploy product --image=nginx:alpine 
